@@ -5,7 +5,7 @@ public class Voetbalclub {
     private int aantalGewonnen = 0;
     private int aantalGelijk = 0;
     private int aantalVerloren = 0;
-    public String naam;
+    public String naam = "FC";
 
     public Voetbalclub(int aantalGewonnen, int aantalGelijk, int aantalVerloren, String naam) {
         this.aantalGewonnen = aantalGewonnen;
@@ -15,7 +15,9 @@ public class Voetbalclub {
     }
 
     public Voetbalclub(String naam) {
-        this.naam = naam;
+        if (naam != null && !naam.equals("")) {
+            this.naam = naam;
+        }
     }
 
     public Voetbalclub() {
@@ -38,7 +40,6 @@ public class Voetbalclub {
         return aantalGewonnen + aantalGelijk + aantalVerloren;
     }
 
-    @Override
     public String toString() {
         return naam + "   " + aantalGespeeld() + " " + aantalGewonnen + " " + aantalGelijk + " " + aantalVerloren + " " + aantalPunten();
     }
