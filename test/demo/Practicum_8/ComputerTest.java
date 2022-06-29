@@ -6,10 +6,8 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ComputerTest {
 
-    // Aangezien de code voor Computer, Auto en Fiets hetzelfde is op de omrekening van het aantal percentage na heb ik
-    // besloten om alleen voor die van Computer een test te maken, dan zou het overal goed moeten werken mits ik geen
-    // typfouten heb gemaakt bij het vermenigvuldigen (na delen door 100) om het totale overgehouden percentage na 1 jaar
-    // weer te geven
+    // Deze tests zouden ook werken op Auto en Computer, het enige verschil zou de vermenigvuldiging zijn i.v.m. de
+    // verschillende percentages.
     @Test
     void huidigeWaarde() {
         Computer computer22 = new Computer("Asus ROG STRIX", "G531GW", 1800, 2022);

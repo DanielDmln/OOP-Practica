@@ -7,22 +7,22 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BedrijfsInventarisTest {
     public Computer computer;
-    public Computer stiekemDezelfdeComputer;
+    public Computer dezelfdeComputer;
     public Auto auto;
-    public Auto stiekemDezelfdeAuto;
+    public Auto dezelfdeAuto;
     public Fiets fiets;
-    public Fiets stiekemDezelfdeFiets;
+    public Fiets dezelfdeFiets;
 
     @BeforeEach
     void testBedrijfsInventaris() {
         computer = new Computer("MSI Superstation", "1234", 10000, 2022);
-        stiekemDezelfdeComputer = new Computer("MSI Superstation", "1234", 10000, 2022);
+        dezelfdeComputer = new Computer("MSI Superstation", "1234", 10000, 2022);
 
         auto = new Auto("Porsche 911", 150000, 2015, "68-MP-LK");
-        stiekemDezelfdeAuto = new Auto("Porsche 911", 150000, 2015, "68-MP-LK");
+        dezelfdeAuto = new Auto("Porsche 911", 150000, 2015, "68-MP-LK");
 
         fiets = new Fiets("Piaggio Zip", 2000, 2016, 4321);
-        stiekemDezelfdeFiets = new Fiets("Piaggio Zip", 2000, 2016, 4321);
+        dezelfdeFiets = new Fiets("Piaggio Zip", 2000, 2016, 4321);
     }
 
     // Test of gelijke objecten aangeschaft kunnen worden
@@ -32,11 +32,11 @@ class BedrijfsInventarisTest {
         BedrijfsInventaris bedrijfsInventarisWaarAlleenJuisteInGaan = new BedrijfsInventaris("betere naam", 1000000);
 
         bedrijfsInventarisWaarAllesInGaat.schafAan(computer);
-        bedrijfsInventarisWaarAllesInGaat.schafAan(stiekemDezelfdeComputer);
+        bedrijfsInventarisWaarAllesInGaat.schafAan(dezelfdeComputer);
         bedrijfsInventarisWaarAllesInGaat.schafAan(auto);
-        bedrijfsInventarisWaarAllesInGaat.schafAan(stiekemDezelfdeAuto);
+        bedrijfsInventarisWaarAllesInGaat.schafAan(dezelfdeAuto);
         bedrijfsInventarisWaarAllesInGaat.schafAan(fiets);
-        bedrijfsInventarisWaarAllesInGaat.schafAan(stiekemDezelfdeFiets);
+        bedrijfsInventarisWaarAllesInGaat.schafAan(dezelfdeFiets);
 
         bedrijfsInventarisWaarAlleenJuisteInGaan.schafAan(computer);
         bedrijfsInventarisWaarAlleenJuisteInGaan.schafAan(auto);
