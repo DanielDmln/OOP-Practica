@@ -1,8 +1,7 @@
 /.idea/
 /out/
 /src/demo/v1d/Practicum_1.java
-/test/
-/lib/
-/OOP.iml
-/Practicum_2a/
-/Zwembad/
+/src/demo/v1d/Practicum_2a.java
+/src/demo/v1d/Zwembad.java
+/test/demo/v1d/ZwembadTest.java
+/lib/OOP.iml
