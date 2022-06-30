@@ -1,8 +1,4 @@
-package demo.practicum_9a;
-
-import jdk.jshell.execution.Util;
-
-import java.util.Locale;
+package demo.practicum_9.a;
 
 public class Main {
 

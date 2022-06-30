@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="325.0" prefWidth="511.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="demo.practicum_9.b.userinterface.BoekingenController">
+
+   <children>
+
+      <Label fx:id="label" layoutX="53.0" layoutY="15.0" prefHeight="26.0" prefWidth="406.0" text="Voer uw gegevens in!" />
+
+      <Label layoutX="53.0" layoutY="66.0" prefHeight="26.0" prefWidth="126.0" text="Naam:" />
+      <Label layoutX="53.0" layoutY="108.0" prefHeight="26.0" prefWidth="126.0" text="Adres:" />
+      <Label layoutX="53.0" layoutY="150.0" prefHeight="26.0" prefWidth="126.0" text="Aankomstdatum:" />
+      <Label layoutX="53.0" layoutY="190.0" prefHeight="26.0" prefWidth="126.0" text="Vertrekdatum:" />
+      <Label layoutX="53.0" layoutY="230.0" prefHeight="26.0" prefWidth="126.0" text="Kampertype:" />
+
+      <TextField fx:id="naam" layoutX="179.0" layoutY="66.0" prefHeight="26.0" prefWidth="280.0" />
+      <TextField fx:id="adres" layoutX="179.0" layoutY="108.0" prefHeight="26.0" prefWidth="280.0" />
+      <DatePicker fx:id="aankomstdatum" layoutX="179.0" layoutY="150.0" prefHeight="26.0" prefWidth="280.0" />
+      <DatePicker fx:id="vertrekdatum" layoutX="179.0" layoutY="190.0" prefHeight="26.0" prefWidth="280.0" />
+      <ComboBox fx:id="kamertype" layoutX="179.0" layoutY="230.0" prefHeight="26.0" prefWidth="280.0" /> <!--promptText="Maak een keuze..."-->
+
+      <Button layoutX="306.0" layoutY="283.0" mnemonicParsing="false" onAction="#resetInvoer" prefHeight="26.0" prefWidth="70.0" text="Reset" textAlignment="CENTER" />
+      <Button layoutX="388.0" layoutY="283.0" mnemonicParsing="false" onAction="#boekVerblijf" prefHeight="26.0" prefWidth="70.0" text="Boek" textAlignment="CENTER" />
+
+   </children>
+
+</AnchorPane>
