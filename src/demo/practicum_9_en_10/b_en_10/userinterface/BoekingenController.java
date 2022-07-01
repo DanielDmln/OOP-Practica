@@ -1,11 +1,10 @@
-package demo.practicum_9.b.userinterface;
+package demo.practicum_9_en_10.b_en_10.userinterface;
 
-import demo.practicum_9.b.model.Hotel;
-import demo.practicum_9.b.model.KamerType;
+import demo.practicum_9_en_10.b_en_10.model.Hotel;
+import demo.practicum_9_en_10.b_en_10.model.KamerType;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.stage.Stage;
 
 import java.time.LocalDate;
 

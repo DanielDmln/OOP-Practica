@@ -1,4 +1,4 @@
-package demo.practicum_9.a;
+package demo.practicum_9_en_10.a;
 
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;

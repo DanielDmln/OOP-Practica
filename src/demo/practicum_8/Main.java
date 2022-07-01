@@ -1,6 +1,6 @@
 package demo.practicum_8;
 
-import demo.practicum_9.a.Utils;
+import demo.practicum_9_en_10.a.Utils;
 
 public class Main {
     public static void main(String[] args) {

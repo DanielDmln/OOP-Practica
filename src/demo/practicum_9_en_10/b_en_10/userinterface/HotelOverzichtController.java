@@ -1,7 +1,7 @@
-package demo.practicum_9.b.userinterface;
+package demo.practicum_9_en_10.b_en_10.userinterface;
 
-import demo.practicum_9.b.model.Boeking;
-import demo.practicum_9.b.model.Hotel;
+import demo.practicum_9_en_10.b_en_10.model.Boeking;
+import demo.practicum_9_en_10.b_en_10.model.Hotel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -10,7 +10,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
@@ -18,7 +17,6 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
 
-import java.io.IOException;
 import java.time.LocalDate;
 
 public class HotelOverzichtController {

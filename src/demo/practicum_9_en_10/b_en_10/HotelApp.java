@@ -1,8 +1,8 @@
-package demo.practicum_9.b;
+package demo.practicum_9_en_10.b_en_10;
 
-import demo.practicum_9.b.model.Hotel;
-import demo.practicum_9.b.model.Kamer;
-import demo.practicum_9.b.model.KamerType;
+import demo.practicum_9_en_10.b_en_10.model.Hotel;
+import demo.practicum_9_en_10.b_en_10.model.Kamer;
+import demo.practicum_9_en_10.b_en_10.model.KamerType;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

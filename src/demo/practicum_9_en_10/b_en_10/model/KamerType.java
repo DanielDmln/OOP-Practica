@@ -1,4 +1,4 @@
-package demo.practicum_9.b.model;
+package demo.practicum_9_en_10.b_en_10.model;
 
 public class KamerType {
 	private String typeNaam;

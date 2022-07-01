@@ -1,4 +1,4 @@
-package demo.practicum_9.b.model;
+package demo.practicum_9_en_10.b_en_10.model;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -81,11 +81,11 @@ public class Hotel {
 			if (boeking.getKamer().equals(kamer)) {
 				
 				// bool overlap = a.start < boeking.end && boeking.start < a.end;
-				// .plusDays(1) toegevoegd zodat als de vertrekdatum van een klant gelijk is aan de aankomstdatum van een andere klant
-				// hier ook een andere kamernummer aan zal worden gegeven. Ik zie de aankomstdatum en vertrekdatum namelijk allebei
-				// als verblijfdata, zo hebben klanten altijd de tijd om aan te komen / te vertrekken zonder de stress te hebben dat zij
-				// hun kamer al vrij moeten geven.
-				if (aankomst.isBefore(boeking.getVertrekDatum().plusDays(1)) && boeking.getAankomstDatum().isBefore(vertrek)) {
+				// .plusDays(1) & .minusDays(1) toegevoegd zodat als de vertrekdatum van een klant gelijk is aan de aankomstdatum van
+				// een andere klant hier ook een andere kamernummer aan zal worden gegeven. Ik zie de aankomstdatum en vertrekdatum
+				// namelijk allebei als verblijfdata, zo hebben klanten altijd de tijd om aan te komen / te vertrekken zonder de stress
+				// te hebben dat zij hun kamer al vrij moeten geven.
+				if (aankomst.isBefore(boeking.getVertrekDatum().plusDays(1)) && vertrek.isAfter(boeking.getAankomstDatum().minusDays(1))) {
 					isBeschikbaar = false;
 					break;
 				}
