@@ -4,10 +4,7 @@ import demo.practicum_9.b.model.Hotel;
 import demo.practicum_9.b.model.KamerType;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.DatePicker;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.stage.Stage;
 
 import java.time.LocalDate;
@@ -61,9 +58,13 @@ public class BoekingenController {
                 kt = new KamerType("DeLuxe", 2, 85.00);
 
             Hotel.getHotel().voegBoekingToe(aankomstdatum.getValue(), vertrekdatum.getValue(), naam.getText(), adres.getText(), kt);
-            
-            Stage thisStage = (Stage) label.getScene().getWindow();
-            thisStage.close();
+            label.setText("Uw boeking is succesvol aangemaakt!");
+
+            aankomstdatum.getEditor().clear();
+            vertrekdatum.getEditor().clear();
+
+//            Stage thisStage = (Stage) label.getScene().getWindow();
+//            thisStage.close();
         }
         catch (Exception e) {
             label.setText(e.getMessage());

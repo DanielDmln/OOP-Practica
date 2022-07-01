@@ -17,7 +17,7 @@
       <Label layoutX="53.0" layoutY="108.0" prefHeight="26.0" prefWidth="126.0" text="Adres:" />
       <Label layoutX="53.0" layoutY="150.0" prefHeight="26.0" prefWidth="126.0" text="Aankomstdatum:" />
       <Label layoutX="53.0" layoutY="190.0" prefHeight="26.0" prefWidth="126.0" text="Vertrekdatum:" />
-      <Label layoutX="53.0" layoutY="230.0" prefHeight="26.0" prefWidth="126.0" text="Kampertype:" />
+      <Label layoutX="53.0" layoutY="230.0" prefHeight="26.0" prefWidth="126.0" text="Kamertype:" />
 
       <TextField fx:id="naam" layoutX="179.0" layoutY="66.0" prefHeight="26.0" prefWidth="280.0" />
       <TextField fx:id="adres" layoutX="179.0" layoutY="108.0" prefHeight="26.0" prefWidth="280.0" />
